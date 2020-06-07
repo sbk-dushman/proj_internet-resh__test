@@ -1,0 +1,2 @@
+градиент текста не докрученый   
+ background: linear-gradient(90deg, #F27A54 42.95%, #A154F2 121.05%)
