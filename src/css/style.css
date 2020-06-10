@@ -9,6 +9,7 @@ html, body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f5f6fa;
+	/* min-width: 320px; */
 }
 button{
 	width: 251.75px;
@@ -17,19 +18,19 @@ button{
 	border: none;
 	outline: none;
 	text-transform: uppercase;
-	background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+	background:  linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);;
 	border-radius: 30px;
 	color:  #fff;
-	/* запомни */
-        box-shadow: 0 0 3pt 2pt red;
-	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+}
+.over-elements {
+    overflow: hidden;
+}
 
-}
-footer{
-	padding-top: 73px;
-	background-color: #fff ;
-}
-header{
+.header{
 	padding-top: 15px;
 	width: 100%;
 	background-color: #fff ;
@@ -40,25 +41,43 @@ header{
 }
 nav{
 	display: inline-block;
-
 }
 a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 12px;
+	font-size: 13px;
 	text-align: center;
 }
-.headar-menu__links li {
-		display: inline-block;
-		min-width: 20px;
+.header-menu a:after,.heaadar__login_link:after {
+	display: block;
+	/* position: absolute; */
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%); /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
 }
-.headar-menu{
 
-	    min-width: 58%;
+.header-menu a:hover:after,.heaadar__login_link:hover:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-.headar-menu__links a{
+.header-menu__links li {
+	display: inline-block;
+	padding: 18px;    
+}
+.heaadar__avatar{
+	vertical-align: middle;
+}
+.btn-shadow{
+	background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+	margin: 118px auto 0px;
+	padding: 3px 12px;
+	   border-radius: 43px;
+}
+.header-menu__links a{
 	min-width: 20px;
 }
 .heaadar__logo{
@@ -66,31 +85,85 @@ a{
 	min-height: 61px;
 	display: inline-block;
 	vertical-align: middle;
-	/* padding-right: 11%; */
+}
+.is-pop-up-open {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.popup-container{
+	position: fixed;
+	top: 0;
+	display: flex;
+	width: 100%;
+	visibility: hidden;
+	height: 100%;
+	background-color: #FFFFFF;
+	opacity: 0.9;
+	z-index: 900;
+	justify-content: center;
+}
+.recall-form__exit-btn{
+	background-image: url(../img/exit.svg);
+	position: absolute;
+	background-repeat: no-repeat;
+ 	left: 88.6%;
+	right: 10%;
+	top: 5%;
 }
 
+.recall-form{
+	width: 500px;
+	height: 570px;
+	border-radius: 20px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+	padding: 84px 76px;
+	opacity: 4;
+	top: 108px;
+	position: relative;
+	text-align: center;
+}
+.form-title{
+	font-weight: 500;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 53px;
+}
+.form-btn{
+	margin-top: 40px;
+}
+.recall-form input{
+	width: 350px;
+	height: 56px;
+	border: 1px solid #acacac;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	font-size: 17px;
+	color: #BFBFBF;
+	padding-left: 15px;
+}
 
 section{
 	margin-bottom: 93px;
-	/* text-align: center; */
-	font-size: 19px;
 	background-color: #FFFFFF;
 }
-
-.heaadar__main-section {
-    max-width: 72%;
+.heaadar__login_link{
+	margin-right: -80px;
 }
+
 .fixed-container{
 	max-width: 1200px;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	position: relative;
 	justify-content:space-between; 
 	align-items: center;
 	width: 100%;	
 }
 .dream-figure{
-    /* background-color: red; */
     padding-top: 475px;
     padding-bottom: 423px;
 	position: relative;
@@ -103,7 +176,6 @@ section{
 }
 
  [class*=dream-figure__free-action] {
-	/* padding-right: 30px; */
 	font-weight: 500;
 	font-size: 16px;
 	vertical-align: bottom;
@@ -130,7 +202,7 @@ strong[class*=dream-figure__free-action]{
 }
 .girl-container__img img{
 	position: absolute;
-    top: -30.3%;
+    top: -19.3%;
     left: 27.7%;
 }
 .girl-container__drow-box{
@@ -158,15 +230,251 @@ background: linear-gradient(90deg, #F27A54 42.95%, #A154F2 121.05%);
   -webkit-text-fill-color: transparent;
    -webkit-background-clip: text;
 }
-.dream-figure__free-action{
+
+
+.you-get-section__title{
+	padding-top: 10%;
+	padding-bottom: 2.3%;	
+	font-size: 31px;
+
+} 
+.you-get-section__description{
+    min-width: 100%;
+	align-self: baseline;
+    padding-bottom: 9.8%; /*? */
+	line-height: 1.4;
+	font-size: 20px;
+}
+[class^=get__img_]{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/sprite-1.png);
+	margin: 0px auto 16px;
+	width: 77px;
+	height: 77px;
+}
+.get__img_1{
+	background-position: 0 -2px;
+}
+.get__img_3{
+	background-position: -154px -2px;
+    width: 80px;
+}
+.get__txt_title{
+	font-weight: 500;
+font-size: 20px;
+}
+.get__text_1,.get__text_2,.get__text_3{
+	font-size: 15px;
+text-align: center;
+}
+.get-container__get{
+    max-width: 19.5%;
+	min-height: 20.2vh;
+	text-align: center;
+}
+.you-get-section__btn{
+margin-bottom: 12px;
+
+}
+/* experts-section */
+[class$=section__title]{
+font-size: 32px;
+	text-transform: uppercase;
+	color: #5A5A5A;
+}
+.experts-section__title{
+	padding-top: 60px;
+	padding-bottom: 30px;
+
+}
+.experts-section__description{
+	font-size: 20px;
+	color: #6D6D6D;
+	max-width: 100%;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding-bottom: 108px;
+
+}
+.experts-itam{
+	/* background-color: red; */
+	max-width: 50%;
+	
+}
+ .experts-itam__description{
+	max-width: 60%;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 27px;
+    margin-left: 55px;
+    margin-bottom: 17px;
+
+
+}
+.experts-itam__description span,.experts-section__support-info{
+	font-size: 20px;
+	text-align: left;
+	color: #6D6D6D;
+
+}
+[class^=experts-itam__avatar_]{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../img/sprite-2.png);
+	width: 170px;
+	height: 170px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.experts-itam__avatar_1{
+	background-position: -202px -6px;
+	height: 181px;
+	    margin-right: 14px;
+}
+.experts-itam__avatar_2{
+	background-position: 0 -7px;
+	height: 180px;
+	margin-right: 12px;
+}
+.experts-itam__avatar_2 +p{
+	margin-right: -6px;
+}
+.experts-section__support-info{
+    padding-top: 78px;
+    padding-bottom: 52px;
+}.support-info__icon +span{
+	padding-right: 31px;
+    padding-left: 20px;
+}
+	.support-info__icon{
+	vertical-align: middle;
+	padding-left: 32px;
+}
+.experts-section__btn{
+	margin: 0 auto;
+	margin-top: 20px; 
+}
+.cours-info-section__title{
+    padding-top: 66px;
+    padding-bottom: 32px;
+	 width: 100%;			/* убрать  чтобы показать глюк*/
+	 vertical-align: top;		
+}
+.cours-info-section__img{
+		margin-left: -30px;
+		margin-top: 28px;
+}
+.cours-info-section__course-facts{
+	max-width: 72%;
+	list-style-type: none;
+	font-size: 15px;
+		padding-top: 14px;
+		padding-left: 106px;
+		cursor: pointer;
+}
+.cours-info-section__course-facts span{
+    font-size: 98px;
+	font-weight: 900;
+	vertical-align: bottom;
+}
+.cours-info-section__course-facts p{
+	display: inline-block;
+}
+.cours-info-section__course-facts li{
+		    opacity: 0.5;
+		    transition-property:transform-translateX,opacity;
+		    transition:0.5s;
+		    -webkit-transition:0.5s;
+		    -moz-transition:0.5s;
+		    -ms-transition:0.5s;
+		    -o-transition:0.5s;
+}
+
+.cours-info-section__course-facts span{
+	    opacity: 0.1;
+	    transition:0.3s;
+	    transition-property: color, background-color,opacity;
+	    -webkit-transition:0.3s;
+	    -moz-transition:0.3s;
+	    -ms-transition:0.3s;
+	    -o-transition:0.3s;
+}
+	.cours-info-section__course-facts li:hover{
+		opacity: 1;
+		transform: translateX(84px)	;
+		-webkit-transform: translateX(84px)	;
+		-moz-transform: translateX(84px)	;
+		-ms-transform: translateX(84px)	;
+		-o-transform: translateX(84px)	;
+}
+
+.cours-info-section__course-facts li:hover span {/*стиль для всех span - прямых наследников div */
+	opacity: 0.5;
+	color: #F27A54;
+	background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
+ 	 -webkit-text-fill-color: transparent;
+  	 -webkit-background-clip: text;
 
 }
 
-/* футер  -- остановился тут*/ 
+[class*=course-facts__description]>b{
+	font-size: 20px;
+	line-height: 1.5;
+}
+.course-facts__description_1{
+	max-width: 89.5%;
+padding-left: 43px;
+	
+}
+.course-facts__description_1 li{
+	    margin-top: -16px;
+    padding-bottom: 16px;
+}
+
+.course-facts__description_2{
+	max-width: 64.5%;
+	margin-top: 2px;
+	   padding-left: 43px;
+  
+}
+
+.course-facts__description_3 {
+	max-width: 71.5%;
+	    padding-left: 28px;
+}
+.cours-info-section__btn{
+	margin: 0 auto;
+	font-weight: 900;
+	font-size: 13.25px;
+}
+
+.cours-info-section__welcome{
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 25px;
+	color: #6D6D6D;
+}
+
+/* футер */
+.footer{
+	background-color: #fff ;
+	position: relative;
+}
+
+.footer__logo{
+    margin-top: -13px;
+}
 .footer-menu ul{
 	width: 49%;
 	list-style-type: none;
-	padding-top: 16px;
 	line-height: 2;
 }
 .footer-menu {
@@ -175,11 +483,8 @@ background: linear-gradient(90deg, #F27A54 42.95%, #A154F2 121.05%);
 	
 }
 .footer-menu__links_grup-1 {
-display: inline-block;
-/* line-height: 5; */
-/* padding-top: 20px; */
-text-align: left;
-padding-right:  2px;
+	display: inline-block;
+	text-align: left;
 }
 .footer-menu__links_grup-2 {
 	vertical-align: top;
@@ -189,6 +494,10 @@ padding-right:  2px;
 .footer-menu__links_grup-2 li:last-child{
 	padding-right: 16px;
 }
+.footer__btn{
+	display: block;
+	margin: 0 auto;
+}
 .tel-icon{
 	background-image: url(../img/icon-tel.png);
 	width: 7px;
@@ -196,4 +505,35 @@ padding-right:  2px;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.footer-contacts{
+    min-height: 22vh;
+	min-width: 20%;
+		text-align: center;
+		padding-top: 80px;
+}
+.footer-contacts__phone{
+
+	    padding-right: 140px;
+}
+.footer-contacts__phone,.footer-contacts__web{
+	font-size: 14px;
+	color: #979797;
+	position: absolute;
+	right: 0;
+	top: 82%;
+	
+}
+.footer-menu li,.footer a, button {
+	transition: 0.5s;
+	transition-property: opacity;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+}
+
+
+.footer-menu li:hover,.footer a:hover,button:hover{
+	opacity: 0.5;
 }
