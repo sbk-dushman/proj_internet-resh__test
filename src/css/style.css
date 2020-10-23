@@ -9,7 +9,6 @@ html, body {
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #f5f6fa;
-	/* min-width: 320px; */
 }
 button{
 	width: 251.75px;
@@ -25,11 +24,29 @@ button{
 	-moz-border-radius: 30px;
 	-ms-border-radius: 30px;
 	-o-border-radius: 30px;
+	position: relative;
 }
+
 .over-elements {
     overflow: hidden;
 }
-
+.popup-menu{
+	height: 100%;
+	width:100%;
+	top: 90px;
+	background-color: #FFFFFF;
+	position: fixed;
+	z-index: 900;
+	display: none;
+	list-style-type: none;
+	
+}
+.popup-menu__elements li {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-bottom: 1px solid #f82370;
+}
 .header{
 	padding-top: 15px;
 	width: 100%;
@@ -38,6 +55,17 @@ button{
 	position: fixed;
 	padding: 13px 0;
 	z-index: 40;
+}
+.m-menu__btn{
+	background-repeat: no-repeat;
+	border: none;
+	background-color: transparent;
+	display: none;
+	background-image: url(../img/menu.svg);
+}
+.menu-close{
+	background-image: url(../img/close.svg) !important;
+	background-position: center;
 }
 nav{
 	display: inline-block;
@@ -51,17 +79,17 @@ a{
 }
 .header-menu a:after,.heaadar__login_link:after {
 	display: block;
-	/* position: absolute; */
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%); /*задаём цвет линии*/
+	
+	left: 0; 
+	width: 0;
+	height: 2px;
+	background: linear-gradient(90deg, #F27A54 0%, #A154F2 186.42%);
 	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+	transition: width 0.3s ease-out;
 }
 
 .header-menu a:hover:after,.heaadar__login_link:hover:after {
-	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+	width: 100%; 
 }
 
 .header-menu__links li {
@@ -91,6 +119,19 @@ a{
     overflow: hidden;
     height: 100vh;
 }
+label.error {
+    font-size: 15px;
+    background-color: transparent !important;
+    display: block;
+    font-weight: 300;
+    margin-top: -17px;
+    color: #ee0d0d;
+    text-align: center !important;
+}
+input.error {
+    border: 1px solid  #A154F2  !important;
+}
+
 .popup-container{
 	position: fixed;
 	top: 0;
@@ -148,6 +189,7 @@ a{
 section{
 	margin-bottom: 93px;
 	background-color: #FFFFFF;
+	position: relative;
 }
 .heaadar__login_link{
 	margin-right: -80px;
@@ -166,9 +208,38 @@ section{
 .dream-figure{
     padding-top: 475px;
     padding-bottom: 423px;
-	position: relative;
+}
+.dream-figure__scroll-below{
+    position: absolute;
+    left: 42.6%;
+    top: 97%;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 43px;
+    width: 282px;
+    height: 72px;
+}
+.dream-figure__scroll-below::after{
+	content:"\2193";
+	font-size: 35px;
 }
 
+[class*=section__btn]:after {
+       position: absolute;
+    margin: 0 auto;
+    top: -52%;
+    right: 0px;
+    left: -17px;
+    border-radius: 37px;
+    width: 257px;
+    height: 85px;
+    content: "";
+    border: 15px solid #fff;
+    border-top: 0px;
+}
 
 .dream-figure__middle-box{
 	position: absolute;
@@ -249,7 +320,7 @@ background: linear-gradient(90deg, #F27A54 42.95%, #A154F2 121.05%);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(../img/sprite-1.png);
+	background-image: url(../img/sprite-1-min.png);
 	margin: 0px auto 16px;
 	width: 77px;
 	height: 77px;
@@ -263,11 +334,16 @@ background: linear-gradient(90deg, #F27A54 42.95%, #A154F2 121.05%);
 }
 .get__txt_title{
 	font-weight: 500;
-font-size: 20px;
+	font-size: 20px;
 }
 .get__text_1,.get__text_2,.get__text_3{
 	font-size: 15px;
-text-align: center;
+	text-align: center;
+}
+.you-get-section__get-container{
+    width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 .get-container__get{
     max-width: 19.5%;
@@ -276,6 +352,8 @@ text-align: center;
 }
 .you-get-section__btn{
 margin-bottom: 12px;
+margin: 0 auto;
+margin-top: 120px;
 
 }
 /* experts-section */
@@ -299,7 +377,6 @@ font-size: 32px;
 
 }
 .experts-itam{
-	/* background-color: red; */
 	max-width: 50%;
 	
 }
@@ -324,7 +401,7 @@ font-size: 32px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-image: url(../img/sprite-2.png);
+	background-image: url(../img/sprite-2-min.png);
 	width: 170px;
 	height: 170px;
 	display: inline-block;
@@ -359,9 +436,9 @@ font-size: 32px;
 	margin-top: 20px; 
 }
 .cours-info-section__title{
-    padding-top: 66px;
-    padding-bottom: 32px;
-	 width: 100%;			/* убрать  чтобы показать глюк*/
+       padding-top: 83px;
+    padding-bottom: 30px;
+	 width: 100%;			/*?*/
 	 vertical-align: top;		
 }
 .cours-info-section__img{
@@ -395,7 +472,7 @@ font-size: 32px;
 }
 
 .cours-info-section__course-facts span{
-	    opacity: 0.1;
+		 opacity: 0.1;
 	    transition:0.3s;
 	    transition-property: color, background-color,opacity;
 	    -webkit-transition:0.3s;
@@ -403,7 +480,7 @@ font-size: 32px;
 	    -ms-transition:0.3s;
 	    -o-transition:0.3s;
 }
-	.cours-info-section__course-facts li:hover{
+.cours-info-section__course-facts li:hover{
 		opacity: 1;
 		transform: translateX(84px)	;
 		-webkit-transform: translateX(84px)	;
@@ -412,7 +489,7 @@ font-size: 32px;
 		-o-transform: translateX(84px)	;
 }
 
-.cours-info-section__course-facts li:hover span {/*стиль для всех span - прямых наследников div */
+.cours-info-section__course-facts li:hover span {
 	opacity: 0.5;
 	color: #F27A54;
 	background: linear-gradient(90deg, #F27A54 -21.05%, #A154F2 121.05%);
@@ -524,7 +601,7 @@ padding-left: 43px;
 	top: 82%;
 	
 }
-.footer-menu li,.footer a, button {
+.footer-menu li,.popup-menu__elements li.footer a,.heaadar__login_link_avatar button {
 	transition: 0.5s;
 	transition-property: opacity;
 	-webkit-transition: 0.5s;
@@ -534,6 +611,6 @@ padding-left: 43px;
 }
 
 
-.footer-menu li:hover,.footer a:hover,button:hover{
+.footer-menu li:hover,.footer a:hover,button:hover,.heaadar__login_link_avatar:hover,.popup-menu__elements li:hover{
 	opacity: 0.5;
 }

@@ -4,29 +4,39 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/m_style.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
 	<title>Интернет-Решения</title>
 </head>
 	<body>	
 		<div class="over-elements">
+			<nav class="popup-menu">
+			
+				<ul class="popup-menu__elements">
+					<li	><a href="#course-options">курсы</a></li>
+					<li><a href="#you-get-section">Наши отличия</a></li>
+					<li><a href="#exercise">Питание и упражнения</a></li>
+					<li><a href="#video">Видео о нас</a></li>
+					<li><a href="#experts-section">Эксперты</a></li>
+			
+				</ul>
+			</nav>	
 			<div id="popup-container" class="popup-container">
 				<form id="recall-form" class="recall-form" novalidate="novalidate">
 
 					<h3 class="form-title">Оставить заявку</h3>
 			
 					<label>
-						<input name="name"placeholder="Ваше имя*"  id="recall__name">
+						<input name="name" placeholder="Ваше имя*" id="recall__name">
 					</label>
 			
 					<label>
-						<input type="tel" name="phone" id="recall__tel" placeholder="Номер телефона*" inputmode="verbatim">
-							<!-- <input type="tel" name="phone" id="recall__tel" placeholder="+7 (___) ___-__-__" inputmode="verbatim"> -->
+						<input type="tel" name="phone" id="recall__tel" placeholder="Номер телефона*">
 					</label>
 			
 					<label>
-						<input class="recall__email" type="email" name="email"  placeholder="E-mail*"id="recall__email">
+						<input class="recall__email" type="email" name="email"  placeholder="E-mail*" id="recall__email">
 					</label>
 			
 					<button type="submit" class="more-btn form-btn">Отправить</button>
@@ -56,26 +66,26 @@
 							fill="#E07D95" />
 					</svg>
 					</div>
-					
+					<button class="m-menu__btn"></button>
 					<nav class="header-menu">
 						<ul class="header-menu__links">
-							<li><a href="#">курсы</a></li>
-							<li><a href="#">Наши отличия</a></li>
-							<li><a href="#">Питание и упражнения</a></li>
-							<li><a href="#">Видео о нас</a></li>
-							<li><a href="#">Эксперты</a></li>
+							<li><a href="#course-options">курсы</a></li>
+							<li><a href="#you-get-section">Наши отличия</a></li>
+							<li><a href="#exercise">Питание и упражнения</a></li>
+							<li><a href="#video">Видео о нас</a></li>
+							<li><a href="#experts-section">Эксперты</a></li>
 						</ul>
 					</nav>
-					<a class="heaadar__login_link" href="">В ЛИЧНЫЙ КАБИНЕТ</a>
-					<a href="">
+					<a class="heaadar__login_link" href="#">В ЛИЧНЫЙ КАБИНЕТ</a>
+					<a class="heaadar__login_link_avatar" href="#">
 						<svg class="heaadar__avatar" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M16.5493 40.7277C19.5227 42.2926 22.3396 43.0751 25 43.0751C27.6604 43.0751 30.4382 42.2926 33.3333 40.7277C36.3067 39.1628 38.5368 37.2457 40.0235 34.9765C39.9452 32.7856 38.1847 30.9468 34.7418 29.4601C31.2989 27.9734 28.0516 27.23 25 27.23C21.9484 27.23 18.7011 27.9734 15.2582 29.4601C11.8153 30.8685 10.0548 32.7074 9.97653 34.9765C11.4632 37.2457 13.6541 39.1628 16.5493 40.7277ZM30.2817 9.74178C28.795 8.25509 27.0344 7.51174 25 7.51174C22.9656 7.51174 21.205 8.25509 19.7183 9.74178C18.2316 11.2285 17.4883 12.989 17.4883 15.0235C17.4883 17.0579 18.2316 18.8185 19.7183 20.3052C21.205 21.7919 22.9656 22.5352 25 22.5352C27.0344 22.5352 28.795 21.7919 30.2817 20.3052C31.7684 18.8185 32.5117 17.0579 32.5117 15.0235C32.5117 12.989 31.7684 11.2285 30.2817 9.74178ZM7.277 7.39437C12.2066 2.46479 18.1142 0 25 0C31.8858 0 37.7543 2.46479 42.6056 7.39437C47.5352 12.2457 50 18.1142 50 25C50 31.8858 47.5352 37.7934 42.6056 42.723C37.7543 47.5743 31.8858 50 25 50C18.1142 50 12.2066 47.5743 7.277 42.723C2.42567 37.7934 0 31.8858 0 25C0 18.1142 2.42567 12.2457 7.277 7.39437Z"
-							fill="url(#paint0_linear)" />
+							fill="url(#paint1_linear)" />
 						<defs>
-							<linearGradient id="paint0_linear" x1="-42.6056" y1="24.9999" x2="92.6056" y2="24.9999"
+							<linearGradient id="paint1_linear" x1="-42.6056" y1="24.9999" x2="92.6056" y2="24.9999"
 								gradientUnits="userSpaceOnUse">
-								<stop stop-color="#F27A54" />
+								<stop offset="-85.21%" stop-color="#F27A54" />
 								<stop offset="1" stop-color="#A154F2" />
 							</linearGradient>
 						</defs>
@@ -96,29 +106,31 @@
 		
 					<div class="girl-container">
 						<div class="girl-container__img">
-							<img src="./img/girl.png" alt="Девушка">
+							<img src="./img/girl-min.png" alt="Девушка">
 						</div>
 						<div class="girl-container__drow-box">
 							<svg width="303" height="350" viewBox="0 0 303 296" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<ellipse cx="151.5" cy="120.5" rx="151.5" ry="150.5" fill="url(#paint0_linear)" />
+								<ellipse cx="151.5" cy="120.5" rx="151.5" ry="150.5" fill="url(#grl_linear)" />
 								<defs>
-									<linearGradient id="paint0_linear" x1="1.05212e-06" y1="150.5" x2="564.852" y2="150.5"
+									<linearGradient id="grl_linear" x1="1.05212e-06" y1="150.5" x2="564.852" y2="150.5"
 										gradientUnits="userSpaceOnUse">
-										<stop stop-color="#F27A54" />
+										<stop offset="0" stop-color="#F27A54" />
 										<stop offset="1" stop-color="#A154F2" />
 									</linearGradient>
 								</defs>
+
 							</svg>
 
 						</div>
 					</div>
 				</div>
-				
+				<span class="dream-figure__scroll-below">Листай ниже<br></span>
 				
 			</section>
 		
-			<section style="background-color:aqua;height:955px ;">2</section>
-			<section class="you-get-section">
+			<section  id="course-options" style="background-color:aqua;height:955px ;">
+				<h2>2</h2> </section>
+			<section class="you-get-section" id="you-get-section">
 				
 				<div class="fixed-container">	
 					<h2 class="you-get-section__title">Что вы&nbsp;получите?</h2> 
@@ -128,11 +140,11 @@
 						elit,
 						sed do&nbsp;eiusmod tempor incididunt ut&nbsp;labore et&nbsp;dolore magna aliqua.
 					</p>
-					
+					<div class="you-get-section__get-container">
 						<div class="get-container__get">
 							<div class="get__img_1"></div>
 							<div class="get__text_1">
-								<span class="get__txt_title">План питания</span>
+								<span class="get__txt_title">План питания</span><br>
 								Полноценный, сбалансированный, созданный лично для вас
 							</div>
 						</div>
@@ -140,7 +152,7 @@
 						<div class="get-container__get">
 							<div class="get__img_2"></div>
 							<div class="get__text_2">
-								<span class="get__txt_title">Видео-тренировки</span>
+								<span class="get__txt_title">Видео-тренировки</span><br>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&nbsp;eiusmod tempor incididunt
 								ut&nbsp;labore
 								et&nbsp;dolore magna aliqua.
@@ -150,23 +162,20 @@
 						<div class="get-container__get">
 							<div class="get__img_3"></div>
 							<div class="get__text_3">
-								<span class="get__txt_title">Консультация 24/7</span>
+								<span class="get__txt_title">Консультация 24/7</span><br>
 								Задайте вопрос в&nbsp;любое время нашим экспертам: диетологу, тренеру и&nbsp;психологу!
 							</div>
 						</div>
-						
 					</div>
-					<div class="fixed-container">
-						<span class="btn-shadow">
-							<button class="you-get-section__btn active-form">ПОПРОБОВАТЬ</button>
-						</span>
-						
-					</div>	
+						<button class="you-get-section__btn active-form">ПОПРОБОВАТЬ</button>
+					<!-- <span class="border2__you-get-section"></span> -->
+					</div>
+					
 			</section>
 			<section class="cours-info-section">
 					<div class="fixed-container">
 					<h2 class="cours-info-section__title">информация о&nbsp;курсах</h2>
-					<img src="./img/girl2.png" class="cours-info-section__img" alt="Девушка">
+					<img src="./img/girl2-min.png" class="cours-info-section__img" alt="Девушка">
 
 					
 				<ul class="cours-info-section__course-facts">
@@ -201,16 +210,16 @@
 				<span class="cours-info-section__welcome">Рады приветствовать тебя в семье FIT GO!</span>
 						<button class="cours-info-section__btn active-form">ПРИСОЕДИНИТЬСЯ</button>
 				</div>
-			
+			<span></span>
 			</section>
 		
 
-			<section style="background-color:aqua;height:738px"">5</section>
-			<section style="background-color: rgb(218, 199, 33);height:830px"">6</section>
-			<section style="background-color: rgb(206, 137, 202);height:738px">7</section>
+			<section id="exercise" style="background-color:aqua;height:738px"> <h2>5</h2></section>
+			<section  id="you-need" style="background-color: rgb(218, 199, 33);height:830px"><h2>6</h2> </section>
+			<section id="video" style="background-color: rgb(206, 137, 202);height:738px"> <h2>7</h2></section>
 			
 
-			<section class="experts-section">
+			<section class="experts-section" id="experts-section">
 				<div class="fixed-container">
 					<h2 class="experts-section__title">Ваши эксперты</h2>
 					<p class="experts-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -257,7 +266,7 @@
 									d="M35.5978 31.7729C35.055 33.3057 32.9006 34.577 31.1822 34.9482C30.0066 35.1985 28.4709 35.3982 23.3016 33.2551C16.6894 30.5157 12.4312 23.7966 12.0994 23.3607C11.7816 22.9248 9.42749 19.8029 9.42749 16.5741C9.42749 13.3454 11.0672 11.7732 11.7281 11.0982C12.2709 10.5441 13.1681 10.291 14.0287 10.291C14.3072 10.291 14.5575 10.3051 14.7825 10.3163C15.4434 10.3445 15.7753 10.3838 16.2112 11.4273C16.7541 12.7351 18.0759 15.9638 18.2334 16.2957C18.3937 16.6276 18.5541 17.0776 18.3291 17.5135C18.1181 17.9635 17.9325 18.1632 17.6006 18.5457C17.2687 18.9282 16.9537 19.2207 16.6219 19.6313C16.3181 19.9885 15.975 20.371 16.3575 21.032C16.74 21.6788 18.0619 23.836 20.0081 25.5685C22.5197 27.8045 24.5559 28.5188 25.2844 28.8226C25.8272 29.0476 26.4741 28.9941 26.8706 28.5723C27.3741 28.0295 27.9956 27.1295 28.6284 26.2435C29.0784 25.6079 29.6466 25.5291 30.2428 25.7541C30.8503 25.9651 34.065 27.5541 34.7259 27.8832C35.3869 28.2151 35.8228 28.3726 35.9831 28.651C36.1406 28.9295 36.1406 30.2373 35.5978 31.7729Z"
 									fill="#FAFAFA" />
 							</svg>
-						</span> а&nbsp;также <b>в&nbsp;нашем приложении</b> и&nbsp;там где Вам удобно <b>24/7</b>
+						</span>а&nbsp;также<b>в&nbsp;нашем приложении</b> и&nbsp;там где Вам удобно <b>24/7</b>
 					</p>
 					<button class="experts-section__btn active-form">ПОПРОБОВАТЬ</button>
 				</div>
@@ -290,13 +299,13 @@
 				</div>
 				<nav class="footer-menu">
 						<ul class="footer-menu__links_grup-1">
-							<li><a href="#">курсы</a></li>
-							<li><a href="#">Наши отличия</a></li>
-							<li><a href="#">Питание и упражнения</a></li>
+						<li><a href="#course-options">курсы</a></li>
+						<li><a href="#you-get-section">Наши отличия</a></li>
+						<li><a href="#exercise">Питание и упражнения</a></li>
 						</ul>
 						<ul class="footer-menu__links_grup-2">
-							<li><a href="#">Видео о нас</a></li>
-							<li><a href="#">Эксперты</a></li>
+							<li><a href="#video">Видео о нас</a></li>
+							<li><a href="#experts-section">Эксперты</a></li>
 						</ul>
 					</nav>
 					<div class="footer-contacts">
@@ -305,14 +314,15 @@
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path
 							d="M14.7162 10.5022C13.7366 10.5022 12.7747 10.349 11.8633 10.0478C11.5041 9.92524 11.0787 9.99165 10.7841 10.168C10.6468 10.2501 10.5309 10.3635 10.4033 10.4599C9.42322 11.1997 8.07191 11.3422 7.09871 10.5933C6.50026 10.1328 5.98203 9.62553 5.51505 9.04254C4.67858 7.99829 4.83974 6.52107 5.64408 5.45188C5.98654 5.10988 6.10938 4.61029 5.96221 4.14154C5.65971 3.22529 5.50604 2.26392 5.50604 1.28392C5.50608 0.575958 4.93013 0 4.22221 0H1.28387C0.575958 0 0 0.575958 0 1.28387C0 9.39846 6.60158 16 14.7162 16C15.4241 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5022 14.7162 10.5022Z"
-							fill="url(#paint0_linear)" />
+							fill="url(#footer_paint0_linear)" />
 						<defs>
-							<linearGradient id="paint0_linear" x1="-3.36843" y1="8" x2="19.3685" y2="8" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#F27A54" />
+							<linearGradient id="footer_paint0_linear" x1="-3.36843" y1="8" x2="19.3685" y2="8" gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#F27A54" />
 								<stop offset="1" stop-color="#A154F2" />
 							</linearGradient>
 						</defs>
 					</svg>
+
 					+7 (800) 555 - 35 - 35</a>
 						<a class="footer-contacts__web" href="#">
 					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -321,10 +331,10 @@
 							fill="black" />
 						<path
 							d="M8 0C3.58867 0 0 3.58867 0 8C0 12.4113 3.58867 16 8 16C12.4113 16 16 12.4113 16 8C16 3.58867 12.4113 0 8 0ZM2.21733 11.304C2.74733 11.238 3.242 11.0107 3.63333 10.6273C4.72333 9.538 4.026 8.78733 4.69467 7.96333C4.86133 7.76667 5.14867 7.51467 5.57867 7.42933C7.028 7.11667 8.03933 5.866 8.03933 4.38733C8.03933 3.606 8.13 2.54867 7.314 1.36933C8.19267 1.27933 9.06333 1.36267 9.90933 1.616C9.73733 2.806 9.97 4.03333 10.598 5.08667C11.664 6.846 13.386 6.47733 14.45 6.34933C14.5707 6.82 14.642 7.30933 14.656 7.814C12.8373 7.29067 12.8773 9.44267 11.4593 8.88333C7.60267 7.32733 4.88467 11.4327 7.494 14.6413C5.23533 14.4707 3.28867 13.1713 2.21733 11.304Z"
-							fill="url(#paint0_linear)" />
+							fill="url(#footer_paint1_linear)" />
 						<defs>
-							<linearGradient id="paint0_linear" x1="0" y1="8" x2="16" y2="8" gradientUnits="userSpaceOnUse">
-								<stop stop-color="#F27A54" />
+							<linearGradient id="footer_paint1_linear" x1="-3.36843" y1="8" x2="19.3685" y2="8" gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#F27A54" />
 								<stop offset="1" stop-color="#A154F2" />
 							</linearGradient>
 						</defs>
@@ -332,7 +342,7 @@
 					fitgo.ru</a>
 				</div>
 				
-			
+			</div>
 				
 		</footer>
 		<script src="js/libs/jquery-3.3.1.min.js"></script>

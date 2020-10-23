@@ -1,0 +1,334 @@
+
+@media(max-width:1240px){
+    .fixed-container{
+        padding: 0 20px;
+    }
+    [class^=dream-figure__title]{
+        font-size: 54px;
+    }
+    .dream-figure__subtitle {
+        font-size: 26px;
+    }
+    .cours-info-section__course-facts,.cours-info-section__img {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+    .cours-info-section__title {
+        text-align: center;
+    }
+    .footer-contacts__web{
+        padding-right: 20px;
+    }
+    .you-get-section__get-container {
+        flex-direction: column;
+    }
+    .get-container__get {
+        margin: 0 auto;
+        max-width: 50.5%;
+    }
+    .get__text_1, .get__text_2, .get__text_3 {
+        font-size: 17px;
+        padding-bottom: 48px;
+    }
+    
+    .you-get-section__btn,.cours-info-section__btn {
+        margin-top: 12px;
+
+    }
+    .heaadar__login_link {
+      display: none;
+    }
+    .girl-container {
+      left: 30.5%;
+    top: -338px;
+    transform: scale(0.9);
+
+    }
+    .dream-figure__subtitle {
+            padding-bottom: 6vh;
+    }
+    .dream-figure__middle-box {
+        top: 0px;
+        top: 112px;
+        width: 92%;
+        text-align: center;
+    }
+    .dream-figure__scroll-below {
+        display: none;
+    }
+
+ .experts-section__support-info {
+    padding-left: 1%;
+    text-align: center;
+    padding-right: 1%;
+ }
+ 
+
+}
+@media(max-width:1060px){
+   
+    .experts-itam {
+        min-width: 51%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .experts-section__description {
+    padding-bottom: 88px;
+
+    }
+    .experts-itam__description span, .experts-section__support-info,.experts-section__description,.you-get-section__description   {
+    font-size: 17px;
+   
+    }
+    [class$=section__title] {
+        font-size: 27px;
+   
+    }
+}
+@media(max-width:945px){
+     .footer-contacts {
+        padding-top: 25px;
+    }
+    .experts-itam {
+        min-width: 59%;
+        text-align: center;
+    }
+
+    .experts-itam__description span, .experts-section__support-info,.experts-section__description,.you-get-section__description   {
+         font-size: 14px;
+   
+    }
+    [class$=section__title] {
+        font-size: 27px;
+   
+    }
+}
+@media(max-width:862px){
+   
+    .header-menu{
+        display: none;
+    }
+    .m-menu__btn{
+
+    display: block;
+      background-image: url(../img/menu.svg);
+        height: 52px;
+        width: 52px;
+        background-size: cover;
+    }
+    .m-menu__btn:hover {
+        opacity: 1;
+    }
+    [class^=dream-figure__title] {
+        font-size: 42px;
+    }
+    strong[class*=dream-figure__free-action] {
+        font-size: 23px
+    }
+    .experts-itam {
+        min-width: 61%;
+    }
+}
+@media(max-width:768px){
+    .experts-itam {
+        min-width: 52%;
+        text-align: center
+    }
+    .itam__avatar_1,.experts-itam__avatar_1,.experts-itam__avatar_2,.experts-itam__description{
+      margin: 0 auto;
+    }
+    .dream-figure__free-action{
+    display: block;
+    padding-top:  20px;
+    padding-left: 0;
+    }
+    button {
+        width: 217.75px;
+    }
+   [class*=section__btn]::after {
+        position: absolute;
+        top: -42%;
+        width: 223px;
+        height: 81px;;
+   }
+    .experts-section__support-info {
+        padding-left: 11%;
+        padding-right: 11%;
+    } 
+    .cours-info-section__course-facts {
+        font-size: 20px;
+     
+    }
+    .cours-info-section__course-facts span{
+        font-size: 78px;
+    }
+    [class*=course-facts__description]>b,.get__txt_title {
+        font-size: 19px;
+    }
+    .cours-info-section__img{
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+    }   
+    .get__text_1, .get__text_2, .get__text_3 {
+        font-size: 15px;
+    }
+    
+    .cours-info-section__course-facts p {
+        display: block;  
+        text-align: center;
+        padding-left: 0;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    .cours-info-section__course-facts li{
+        text-align: center;
+    }
+    .cours-info-section__course-facts li:hover {
+        transform: translateX(0);
+        
+    }
+    [class^=dream-figure__title] {
+        font-size: 34px;
+    }
+    .footer-menu {
+         width: 90%;
+        padding-top: 20px;
+    }
+    .footer-contacts {
+        padding-top: 25px;
+        width: 100%;
+    }
+    .girl-container {
+        left: 30.5%;
+        top: -354px;
+        transform: scale(0.7);
+    }
+    .dream-figure__middle-box {
+        top: 80px;
+    }
+    .dream-figure__subtitle {
+        padding-bottom: 2vh;
+    }
+    .dream-figure {
+        padding-bottom: 349px;
+    }
+    .footer{
+        padding-top: 45px;
+    }
+    .support-info__icon svg{
+        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        -ms-transform: scale(0.6);
+        -o-transform: scale(0.6);
+    }
+        .support-info__icon {
+            padding-left: 0;
+    }
+       .experts-section__support-info {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 40px;
+    }
+}
+@media(max-width:509px){
+     [class^=dream-figure__title] {
+        font-size: 26px;
+    }
+    .dream-figure__subtitle {
+        font-size: 20px;
+    }
+    .dream-figure__free-action {
+        display: block;
+        padding-top: 41px;
+    }
+    .experts-section__support-info {
+        padding-left: 66px;
+        padding-right: 59px;
+    }
+      .recall-form {
+        width: 400px;
+        height: 470px;
+    }
+    .recall-form input {
+        width: 250px;
+        height: 56px;
+    }
+    .form-title {
+        font-size: 24px;
+            padding-bottom: 23px
+    }
+    .form-btn {
+        margin-top: 20px;
+    }
+
+}
+@media(max-width:425px){
+ [class^=dream-figure__title] {
+    font-size: 25px;
+}
+.girl-container {
+    left: 16.5%;
+}
+.dream-figure__subtitle {
+    font-size: 20px;
+}
+.dream-figure__free-action {
+    display: block;
+    padding-top: 41px;
+}
+[class$=section__title] {
+    font-size: 24px;
+}
+    strong[class*=dream-figure__free-action] {
+        font-size: 18px;
+    }
+
+ .experts-section__support-info {
+        padding-left: 66px;
+        padding-right: 59px;
+    }
+}
+@media (max-width: 375px){
+    [class^=dream-figure__title] {
+        font-size: 20px;
+    }
+    .dream-figure__subtitle,.cours-info-section__course-facts {
+        font-size: 16px;
+    }
+    .experts-itam__description{
+        font-size: 20px;
+    }
+    .cours-info-section__img {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+}
+    [class$=section__title] {
+        font-size: 23px;
+    }
+    .experts-itam__description span, .experts-section__support-info, .experts-section__description, .you-get-section__description {
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 320px){
+    [class$=section__title] {
+        font-size: 19px;
+    }
+    .experts-section__support-info {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+    [class*=dream-figure__free-action] {
+        font-size: 12px;
+    }
+    .cours-info-section__img {
+        margin-left: -42px;
+    }
+}
